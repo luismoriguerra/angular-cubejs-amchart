@@ -1,0 +1,12 @@
+<!-- create an select with few options -->
+
+<select [(ngModel)]="selectedProject">
+  <option *ngFor="let item of projects" [value]="item['Project.projectid']">
+    {{ item["Project.name"] }}
+  </option>
+</select>
+<span>
+  {{ selectedProject }}
+</span>
+
+<hr />
