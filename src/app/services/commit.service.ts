@@ -28,7 +28,6 @@ export class CommitService {
     return {
       series: resultSet.series()[0],
       data: resultSet.series()[0].series,
-      // seriesNames: resultSet.seriesNames(),
     };
   }
 
